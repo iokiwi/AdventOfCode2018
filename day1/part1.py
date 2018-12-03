@@ -1,9 +1,11 @@
+from functools import reduce
+
 def main():	
     i = input()
     values = []
     while(i):
         try: 
-            values.append(i)
+            values.append(int(i))
             i = input()
         except EOFError:
             break
